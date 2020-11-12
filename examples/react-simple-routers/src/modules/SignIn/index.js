@@ -1,16 +1,13 @@
 import React, { Fragment } from 'react';
-import { useHistory } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
-export default function Dashboard() {
-  const history = useHistory();
-
+function SignIn() {
   return (
     <Fragment>
-      <p>Dashboard Goes here</p>
-      <a href="#" onClick={e => {
-        e.preventDefault();
-        history.push('/');
-      }}>Logout</a>
+      <h4>Login Form Goes here</h4>
+      <Link to="dashboard">Log in</Link>
     </Fragment>
   );
 };
+
+export default withRouter(SignIn);

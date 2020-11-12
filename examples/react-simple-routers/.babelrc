@@ -9,5 +9,8 @@
         }
       ],
       "@babel/preset-react"
+    ],
+    "plugins": [
+      "./scripts/babel-plugin-doc-gen"
     ]
 }

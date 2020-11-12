@@ -12,7 +12,7 @@ import {
 export default function App() {
   return (
     <Fragment>
-      <Router history={browserHistory} basename="/your-folder-name-in-github.io">
+      <Router history={browserHistory}>
         <h1>Simple Banking App goes here</h1>
         <Switch>
           <Route path="/dashboard">
